@@ -1,0 +1,197 @@
+# Patched fonts : https://github.com/Finii/nerd-fonts/tree/feature/cascadia-2111.01-patched/patched-fonts/CascadiaCode/Regular/complete
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+add_newline = false
+palette = 'robintoubi'
+
+[directory]
+format = '''
+[┌─](bold green) [📁 $path](bold blue)([$git_branch](bold red))'''
+home_symbol = "~"
+read_only_style = "red"
+use_os_path_sep = false
+
+[palettes.robintoubi]
+blue = '#1EA3FF'
+
+[time]
+disabled = false
+format = '🕙 [\[$time\]]($style) '
+style = 'bold grey'
+time_format = '%T'
+utc_time_offset = '+1'
+time_range = '10:00:00-14:00:00'
+
+[golang]
+style = "bold cyan"
+symbol = " "
+format = 'via [$symbol$version](cyan)'
+
+[python]
+symbol = "🐍 "
+format = 'via $symbol[$virtualenv](green bold) [$version](yellow bold) '
+python_binary = ['./venv/bin/python', 'python']
+
+# Replace the '❯' symbol in the prompt with '➜'
+[character] # The name of the module we are configuring is 'character'
+success_symbol = '[🐺 ➜ ](bold green)' # The 'success_symbol' segment is being set to '➜' with the color 'bold green'
+error_symbol = '[🐺 ➜](bold red)'
+
+[git_branch]
+format = """\n[└─](bold green) [git ➜](bold blue) [ $symbol$branch(:$remote_branch)]($style) """
+symbol = " "
+style = "bold red"
+
+[aws]
+symbol = "  "
+
+[buf]
+symbol = " "
+
+[c]
+symbol = " "
+
+[conda]
+symbol = " "
+
+[crystal]
+symbol = " "
+
+[dart]
+symbol = " "
+
+[docker_context]
+symbol = " "
+
+[elixir]
+symbol = " "
+
+[elm]
+symbol = " "
+
+[fennel]
+symbol = " "
+
+[fossil_branch]
+symbol = " "
+
+[guix_shell]
+symbol = " "
+
+[haskell]
+symbol = " "
+
+[haxe]
+symbol = " "
+
+[hg_branch]
+symbol = " "
+
+[hostname]
+ssh_symbol = " "
+
+[java]
+symbol = " "
+
+[julia]
+symbol = " "
+
+[kotlin]
+symbol = " "
+
+[lua]
+symbol = " "
+
+[memory_usage]
+symbol = "󰍛 "
+
+[meson]
+symbol = "󰔷 "
+
+[nim]
+symbol = "󰆥 "
+
+[nix_shell]
+symbol = " "
+
+[nodejs]
+symbol = " "
+
+[typst]
+symbol = "t "
+style = "bold blue"
+
+[ocaml]
+symbol = " "
+
+[os.symbols]
+Alpaquita = " "
+Alpine = " "
+Amazon = " "
+Android = " "
+Arch = " "
+Artix = " "
+CentOS = " "
+Debian = " "
+DragonFly = " "
+Emscripten = " "
+EndeavourOS = " "
+Fedora = " "
+FreeBSD = " "
+Garuda = "󰛓 "
+Gentoo = " "
+HardenedBSD = "󰞌 "
+Illumos = "󰈸 "
+Linux = " "
+Mabox = " "
+Macos = " "
+Manjaro = " "
+Mariner = " "
+MidnightBSD = " "
+Mint = " "
+NetBSD = " "
+NixOS = " "
+OpenBSD = "󰈺 "
+openSUSE = " "
+OracleLinux = "󰌷 "
+Pop = " "
+Raspbian = " "
+Redhat = " "
+RedHatEnterprise = " "
+Redox = "󰀘 "
+Solus = "󰠳 "
+SUSE = " "
+Ubuntu = " "
+Unknown = " "
+Windows = "󰍲 "
+
+[package]
+symbol = "󰏗 "
+
+[perl]
+symbol = " "
+
+[php]
+symbol = " "
+
+[pijul_channel]
+symbol = " "
+
+[rlang]
+symbol = "󰟔 "
+
+[ruby]
+symbol = " "
+
+[rust]
+symbol = " "
+
+[scala]
+symbol = " "
+
+[swift]
+symbol = " "
+
+[zig]
+symbol = " "
